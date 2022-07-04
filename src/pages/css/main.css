@@ -1,0 +1,12 @@
+.container-parent-block {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+.main-container {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+.main-content-container {
+    flex: 1 1 auto;
+    position: relative;
+}

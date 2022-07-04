@@ -1,0 +1,198 @@
+.builder-options {
+    flex: 0 0 348px;
+    overflow: hidden;
+}
+.builder-content {
+    background: #F2F2F2;
+}
+.search-header-menu {
+    padding: 17px 13px 17px 19px;
+}
+.search-header-menu input[type="search"] {
+    flex: 1 1 auto;
+    border: 1px solid #DEDEDF;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 0 16px;
+    padding-right: 30px;
+    height: 37px;
+}
+.search-header-menu .btn {
+    margin-left: 8px;
+}
+.tab-nav {
+    border-bottom: 2px solid #E2E2E3;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.tab-nav .btn {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 12px 0;
+    position: relative;
+}
+.tab-nav .btn:after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: transparent;
+    content: '';
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+.tab-nav .active {
+    font-weight: 900;
+}
+.tab-nav .active:after {
+    background-color: #FAB005;
+}
+.asset-menu-body,
+.asset-items-container {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+.asset-items-container .tab-content {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 20px;
+}
+.asset-items-container footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #C2CBD1;
+}
+.asset-items-container .dndnode {
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.2s;
+    min-width: 67px;
+    min-height: 67px;
+    cursor: pointer;
+}
+.asset-items-container .dndnode:hover .node-icon:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../../../assets/images/drag_indicator.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.asset-items-container .dndnode * {
+    pointer-events: none;
+}
+.asset-items-container .dndnode .node-icon {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+.asset-items-container .dndnode:not(:hover) .node-icon{
+    justify-content: center;
+}
+.asset-items-container .dndnode:hover img {
+    justify-self: center;
+}
+.asset-items-container .dndnode img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 32px;
+}
+.asset-items-container .dndnode:hover {
+    box-shadow: 0px 1px 3px #00000029;
+    border-color: #B1CCA3;
+}
+.asset-items-container p {
+    margin-bottom: 20px;
+}
+.asset-items-container .dndnode .node-text {
+    margin-top: auto;
+}
+.builder-content .dndflow {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+.dndflow .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+}
+
+/* Canvas Build style */
+.builder-content .dnd-node-item .outer-node-container {
+    border: none;
+    padding: 8px 10px;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    color: #000000DE;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+.builder-content .dnd-node-item .outer-node-container:before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    vertical-align: middle;
+    background-image: url('../../../assets/images/drag_indicator.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+.builder-content .react-flow__handle {
+    height: 14px;
+    width: 14px;
+    background: #6AAA9F;
+    z-index: 0;
+}
+.builder-content .dnd-node-item {
+    border: none;
+    padding: 0;
+    width: auto;
+    box-shadow: none;
+    background: transparent;
+}
+.builder-content .react-flow__handle-right {
+    right: -8px;
+}
+.builder-content .react-flow__handle-left {
+    left: -8px;
+}
+.react-flow__edge-path {
+    stroke-width: 4px;
+    stroke: #63AA9F;
+}
+.builder-content code {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(255,255,255, 0.9);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.code-block-item label {
+    font-weight: 700;
+    width: 35px;
+    display: inline-block;
+}
